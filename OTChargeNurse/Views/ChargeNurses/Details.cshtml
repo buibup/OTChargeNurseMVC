@@ -1,0 +1,58 @@
+﻿@model OTChargeNurse.Models.ChargeNurse
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ChargeNurse</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Other.OtherId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Other.OtherId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RiskCase.RiskCaseId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RiskCase.RiskCaseId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalCase)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalCase)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Incharge)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Incharge)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AddDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AddDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ChargeNurseId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
